@@ -62,7 +62,7 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function stri
     }
 	fmt.Println("invoke did not find func: " + function)					//error
 
-	return nil, errors.New("Received unknown function invocation: " + function)
+	return nil, errors.New("Hi Received unknown function invocation: " + function)
 }
 
 // Query is our entry point for queries
